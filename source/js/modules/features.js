@@ -33,6 +33,7 @@
     init: false,
     speed: 400,
     slidesPerView: 1,
+    spaceBetween: 4,
     pagination: {
       el: '.features__indicators',
       type: 'bullets',
