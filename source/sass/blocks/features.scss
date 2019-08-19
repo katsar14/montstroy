@@ -1,0 +1,226 @@
+.features {
+  @include container;
+  padding-bottom: 55px;
+  overflow: hidden;
+
+  @include tablet {
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background-color: $white;
+    color: $c-text;
+  }
+
+  @include mobile {
+    padding: 26px 20px 20px;
+  }
+}
+
+.features__wrapper {
+  @include mobile {
+    border: 1px solid $c-border;
+  }
+}
+
+.features__inner-wrapper {
+  overflow: visible;
+
+  // .swiper-pagination {
+  //   pointer-events: none;
+  // }
+
+  @include mobile {
+    overflow: hidden;
+
+    // .swiper-pagination {
+    //   pointer-events: all;
+    // }
+  }
+}
+
+.features__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $c-text-light;
+  box-sizing: border-box;
+
+  @include tablet {
+    color: $c-text;
+  }
+
+  @include mobile {
+    width: 100%;
+    box-sizing: content-box;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.features__item {
+  width: 17%;
+  flex-shrink: 1;
+  position: relative;
+  padding: 110px 5px 15px;
+  text-align: center;
+  font-size: 15px;
+
+  @media (max-width: $medium - 1) and (min-width: $small) {
+    width: 32%;
+    padding: 95px 30px 29px;
+    font-size: 12px;
+    line-height: 1.33;
+    background-color: $white;
+    box-shadow: 0px 10px 18px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    &--active {
+      z-index: 1;
+      cursor: default;
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 120px 20px 33px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    content: "";
+    @include centerH;
+    top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $medium - 1) and (min-width: $small) {
+      opacity: 0.6;
+      transition: opacity 0.3s ease-in-out;
+
+      .features-item--active & {
+        opacity: 1;
+      }
+    }
+
+    @include mobile {
+      opacity: 1;
+      .features-item--active & {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--1::before {
+    width: 62px;
+    height: 64px;
+    background-image: url("../img/like-icon.svg");
+
+    @include tablet {
+      top: 22px;
+      background-image: url("../img/like-icon-dark.svg");
+    }
+
+    @include mobile {
+      top: 30px;
+    }
+  }
+
+  &--2::before {
+    top: 34px;
+    width: 74px;
+    height: 49px;
+    background-image: url("../img/handshake-icon.svg");
+
+    @include tablet {
+      background-image: url("../img/handshake-icon-dark.svg");
+      top: 36px;
+    }
+
+    @include mobile {
+      width: 89px;
+      height: 59px;
+      top: 40px;
+    }
+  }
+
+  &--3::before {
+    top: 18px;
+    width: 70px;
+    height: 69px;
+    background-image: url("../img/settings-icon.svg");
+
+    @include tablet {
+      background-image: url("../img/settings-icon-dark.svg");
+    }
+
+    @include mobile {
+      top: 30px;
+    }
+  }
+}
+
+.features__indicators {
+  left: 50%;
+  transform: translateX(-50%);
+  @include list-reset;
+  display: none;
+  width: 150px;
+  margin: 22px auto 0;
+  justify-content: center;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include mobile {
+    // display: none;
+    margin-top: 10px;
+  }
+
+  span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $primary;
+    }
+
+    @include mobile {
+      width: 6px;
+      height: 6px;
+      background-color: #dddddd;
+      opacity: 1;
+
+      &.active {
+        background-color: #dddddd;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background-color: $primary;
+        transform: scale(1.2)
+      }
+    }
+  }
+}

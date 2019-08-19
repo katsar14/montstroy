@@ -1,0 +1,23 @@
+.main-screen-container {
+  position: relative;
+  margin-bottom: 100px;
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 100%),
+    url("../img/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $c-text-light;
+
+  @include retina {
+    background-image: url("../img/banner@2x.jpg");
+  }
+
+  @include tablet {
+    background: none;
+    background-image: none;
+    margin-bottom: 5px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}

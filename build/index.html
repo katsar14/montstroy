@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>МонтСтрой</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой" width="141" height="60">
+      </a>
+      <nav class="page-header__main-nav main-nav main-nav--header">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Проекты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Партнеры</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page-header__nav-toggler js-nav-toggler" type="button" data-label="Управление меню"></button>
+      <a class="page-header__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
+      <a href="#feedback" class="page-header__btn btn js-smooth-scroll">Обратная связь</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Компания ЗАО «НCП «МонтCтрой»</h1>
+    <div class="main-screen-container">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h2 class="hero__title">Строительно-монтажные работы</h2>
+          <div class="hero__text hero__text--short">
+            <p>Работаем на российском рынке <b>с 1992</b> года</p>
+          </div>
+          <div class="hero__text hero__text--long">
+            <p>Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<b>1992</b> года,
+              и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий,
+              выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и
+              сооружений.</p>
+          </div>
+          <div class="hero__btn-block">
+            <a href="#services" class="hero__btn btn btn--large js-smooth-scroll">Наши услуги</a>
+            <a href="#feedback" class="hero__btn btn btn--large btn--outline js-smooth-scroll">Связаться с нами</a>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <div class="features__inner-wrapper swiper-container">
+            <ul class="features__list swiper-wrapper">
+              <li class="features__item features__item--1 swiper-slide">
+                <p>Гарантированное высокое качество продукции</p>
+              </li>
+              <li class="features__item features__item--2 features__item--active swiper-slide">
+                <p>Исполнение всех сроков&nbsp;и&nbsp;обязательств</p>
+              </li>
+              <li class="features__item features__item--3 swiper-slide">
+                <p>Собственная производственная база</p>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-pagination features__indicators">
+            <span class="features__indicator"></span>
+            <span class="features__indicator features__indicator--active"></span>
+            <span class="features__indicator"></span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+    <section class="services" id="services">
+      <div class="services__wrapper">
+        <h2 class="services__title section-title">Услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="service">
+              <h3 class="service__title">
+                <span>Проектирование</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Предварительная разработка концепции;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Установка систем энергоснабжения;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Оформление задания на проектирование;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Разработка всей рабочей и проектной документации;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Окончательное согласование проекта энергоснабжения в органах
+                    гос.надзора;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Обеспечение авторского надзора на протяжении всего строительства
+                    <span class="hide-on-tablet">(контроль за соблюдением всех норм и проектных разработок)</span>.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="service">
+              <h3 class="service__title">
+                <span>Инженерные изыскания</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Инженерно-геодезические изыскания;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Инженерно-топографические изыскания;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Инженерно-геофизические изыскания;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Инженерно-геологические изыскания;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Изыскания грунтовых строительных материалов (проведение опытных
+                    полевых работ и обследование земляных сооружений);</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Инженерно-экологические (полевые работы, а также лабораторные и
+                    камеральные работы);</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Археологические;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Кадастровые и землеустроительные.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="service">
+
+              <h3 class="service__title">
+                <span>Строительно-монтажные работы</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Строительство и реконструкция подстанций до 500 кВ и
+                    распределительных
+                    устройств станций до 500 кВ;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Строительство распределительных пунктов;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Внедрение систем автоматизации управления оборудованием подстанций
+                    до
+                    500 кВ;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Вынос действующих кабелей из строительной зоны;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Изыскания грунтовых строительных материалов (проведение опытных
+                    полевых работ и обследование земляных сооружений);</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Обеспечение временного электроснабжения;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Монтаж электрооборудования.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="service">
+              <h3 class="service__title">
+                <span>Эксплуатация и сервисное обслуживание</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Эксплуатация электрики зданий и энергоустановок, снабжающих энергией
+                    эксплуатируемые сооружения;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Эксплуатация систем отопления объектов с проведением плановых
+                    сезонных
+                    мероприятий</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Эксплуатация систем ХВС и ГВС эксплуатируемого здания;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Сервисное обслуживание и эксплуатация систем водоснабжения,
+                    водоподготовки и фильтрации в обслуживаемом здании;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Обслуживание системы дренажа, канализации и ливнестоков: прочистка,
+                    промывка, вывоз отходов за территорию;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Сезонная перенастройка автоматических элементов систем эксплуатации
+                    здания и другое.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="service">
+              <h3 class="service__title">
+                <span>Электролаборатория</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Проверка состояния различных элементов устройств заземления;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Проверка наличия цепи, проведение замеров сопротивлений (переходных)
+                    между заземляющими проводниками и заземлителями, проверку металлосвязи;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Проверка систем молниезащиты;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Измерение сопротивления изоляции электрических кабелей, аппаратов,
+                    электропроводок и электрооборудования;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Измерение сопротивления заземления и заземляющих устройств;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Поиск кабельных трасс, мест повреждения и «прожиг кабеля»;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Проведение всех необходимых испытаний и измерений для кабельных
+                    линий,
+                    включая кабель с изоляцией из сшитого полиэтилена до 220 кВ.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="service">
+              <h3 class="service__title">
+                <span>Услуги по технологическому присоединению</span>
+                <button type="button" class="service__toggler">
+                  <span class="visually-hidden">Показать список</span>
+                </button>
+              </h3>
+              <ul class="service__list">
+                <li class="service__item">
+                  <a class="service__link" href="#">Оказание технико-экономического консалтинга в составлении договора
+                    на
+                    технологическое присоединение мощности потребителя к сетям электросетевых компаний;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Обследование присоединяемых устройств ответственным лицом по
+                    государственному надзору при участии сетевого оператора и собственника устройства;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Фактическое присоединение объектов заявителя к сетям оператора;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Составление и согласование необходимой технической документации для
+                    ввода в эксплуатацию объекта;</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Ввод присоединенного объекта в эксплуатацию.</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects__wrapper">
+        <h2 class="projects__title section-title">Проекты</h2>
+        <ul class="projects__list">
+          <li class="projects__item projects__item--col-25">
+            <div class="project project--1">
+              <h3 class="project__title">Стадион «Футур»</h3>
+              <div class="project__description">
+                <p>В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство
+                  распределительной сети мощностью 20кВ</p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item projects__item--col-25">
+            <div class="project project--2">
+              <h3 class="project__title">Бизнес-центр «Ореол»</h3>
+              <div class="project__description">
+                <p>Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с
+                  апартаментами
+                </p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item projects__item--col-25">
+            <div class="project project--3">
+              <h3 class="project__title">Кинотеатр «Семейный»</h3>
+              <div class="project__description">
+                <p>Специалисты выполнили комплекс работ по системам учета электроэнергии</p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item projects__item--col-25">
+            <div class="project project--4">
+              <h3 class="project__title">ТК «Medial»</h3>
+              <div class="project__description">
+                <p>В целях обеспечения электроэнергией телевизионного комплекса было осуществлено строительство
+                  распределительной сети мощностью 20кВ</p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item projects__item--col-50">
+            <div class="project project--5 project--large">
+              <h3 class="project__title project__title">ОАО «ЭнергоНацКомпани»</h3>
+              <div class="project__description">
+                <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы
+                  и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО
+                  «ЭнергоНацКомпани»</p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item projects__item--col-50">
+            <div class="project project--6 project--large">
+              <h3 class="project__title">Театр «Буратино»</h3>
+              <div class="project__description">
+                <p>Специалистами были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации
+                  сценических подъемников в здании театра</p>
+              </div>
+              <a href="#" class="arrow-btn project__more-btn">
+                <span class="visually-hidden">Перейти на страницу проекта</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="partners__header">
+        <h2 class="partners__title section-title">Партнеры</h2>
+        <div class="partners__btn-block">
+          <button class="partners__btn partners__btn--prev arrow-btn arrow-btn--dark arrow-btn--prev" type="button">
+            <span class="visually-hidden">
+              Перейти к предыдующему слайду
+            </span>
+          </button>
+          <button class="partners__btn partners__btn--next arrow-btn arrow-btn--dark" type="button">
+            <span class="visually-hidden">
+              Перейти к следующему слайду
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="partners__wrapper swiper-container">
+        <ul class="partners__list swiper-wrapper">
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-1.png" width="149" height="81" srcset="img/partner-1@2x.png 2x" alt="Ava Company">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-2.png" width="184" height="152" srcset="img/partner-2@2x.png 2x"
+                alt="Mirror Buisness Center">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-3.png" width="211" height="169" srcset="img/partner-3@2x.png 2x"
+                alt="Shield Охранное предприятие">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-4.jpg" width="270" height="135" srcset="img/partner-4@2x.jpg 2x"
+                alt="ЗАО НТФ ТеплоДомЭнерг">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-1.png" width="149" height="81" srcset="img/partner-1@2x.png 2x" alt="Ava Company">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-2.png" width="184" height="152" srcset="img/partner-2@2x.png 2x"
+                alt="Mirror Buisness Center">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-3.png" width="211" height="169" srcset="img/partner-3@2x.png 2x"
+                alt="Shield Охранное предприятие">
+            </a>
+          </li>
+          <li class="partners__item swiper-slide">
+            <a href="#" class="partners__link">
+              <img src="img/partner-4.jpg" width="270" height="135" srcset="img/partner-4@2x.jpg 2x"
+                alt="ЗАО НТФ ТеплоДомЭнерг">
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination partners__pagination"></div>
+      </div>
+
+
+    </section>
+
+    <section class="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts__map" id="map"></div>
+      <div class="contacts__wrapper">
+        <ul class="contacts__contacts-list contacts-list contacts-list--lh-small">
+          <li class="contacts-list__item contacts-list__item--address">
+            <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</address>
+          </li>
+          <li class="contacts-list__item contacts-list__item--email">
+            <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--tel">
+            <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
+            <p>Ежедневно с 9:00 до 18:00</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__col-left">
+        <a class="page-footer__logo">
+          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой" width="141" height="60">
+        </a>
+        <p class="page-footer__company-name">ЗАО «НCП «МонтCтрой»</p>
+
+        <div class="page-footer__nav main-nav main-nav--footer">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Проекты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Партнеры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__socials socials">
+          <ul class="socials__list">
+            <li>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--tw" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__col-center">
+        <div class="feedback" id="feedback">
+          <h3>Свяжитесь с нами</h3>
+          <div class="feedback_form form">
+            <form action="#" method="post">
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="name-field">Имя</label>
+                  <input name="name" type="text" id="name-field" required>
+                </div>
+                <div class="form__field">
+                  <label for="phone-field">Телефон</label>
+                  <input name="tel" type="tel" id="phone-field" required>
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="email-field">E-mail</label>
+                <input name="email" type="email" id="email-field" required>
+              </div>
+              <div class="form__field form__field--mt">
+                <label for="comment-field">Сообщение</label>
+                <textarea name="comment" id="comment-field" rows="1" required></textarea>
+              </div>
+              <p class="form__consent">
+                Заполняя форму на сайте, вы соглашаетесь с нашей
+                <a href="#" target="_blank">Политикой конфиденциальности</a>
+              </p>
+              <button class="form__submit btn btn--dark" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page-footer__col-right">
+        <ul class="page-footer__contacts-list contacts-list contacts-list--footer">
+          <li class="contacts-list__item contacts-list__item--address">
+            <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</address>
+          </li>
+          <li class="contacts-list__item contacts-list__item--email">
+            <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--tel">
+            <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
+            <p>Ежедневно с 9:00 до 18:00</p>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="page-footer__copyright">
+        <p>1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

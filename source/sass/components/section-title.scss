@@ -1,0 +1,34 @@
+.section-title {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-family: $font-alt;
+  font-size: 30px;
+  font-weight: 800;
+  color: $c-text;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &::after {
+    content: '';
+    height: 2px;
+    flex: 1;
+    margin-left: 15%;
+    background-color: $c-text;
+  }
+
+  @include tablet {
+    font-size: 26px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+}

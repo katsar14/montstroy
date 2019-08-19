@@ -1,0 +1,36 @@
+.feedback {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 52px 74px 38px;
+  background-color: $white;
+  color: $dark;
+
+  @include tablet {
+    padding: 37px 52px 30px;
+  }
+
+  @include mobile {
+    padding: 48px 20px 60px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 52px;
+    font-size: 25px;
+    font-family: $font-alt;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8px;
+
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 37px;
+    }
+
+    @include mobile {
+      margin-bottom: 29px;
+    }
+  }
+}

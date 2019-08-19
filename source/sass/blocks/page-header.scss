@@ -1,0 +1,119 @@
+.page-header__wrapper {
+  @include container;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 65px;
+    padding-right: 58px;
+  }
+
+  @include mobile {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 18px;
+  }
+}
+
+.page-header__logo {
+  width: 141px;
+  margin-right: 4%;
+  flex-shrink: 0;
+
+  img {
+    display: block;
+  }
+
+  @include tablet {
+    width: 86px;
+    margin-right: 37px;
+  }
+}
+
+.page-header__phone {
+  margin-left: auto;
+  padding: 8px;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  @include hover;
+
+  @include tablet {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.page-header__nav-toggler {
+  @include btn-reset;
+  display: none;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    $transparent 5px,
+    #afafaf 5px,
+    #afafaf 7px,
+    $transparent 7px,
+    $transparent 15px,
+    #afafaf 15px,
+    #afafaf 17px,
+    $transparent 17px,
+    $transparent 25px,
+    #afafaf 25px,
+    #afafaf 27px,
+    $transparent 27px
+  );
+  background-clip: content-box;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    width: 23px;
+    height: 23px;
+    margin-left: auto;
+
+    background-image: linear-gradient(
+    to bottom,
+    $transparent 3px,
+    #afafaf 3px,
+    #afafaf 5px,
+    $transparent 5px,
+    $transparent 9px,
+    #afafaf 9px,
+    #afafaf 11px,
+    $transparent 11px,
+    $transparent 16px,
+    #afafaf 16px,
+    #afafaf 18px,
+    $transparent 18px
+  );
+  }
+}
+
+.page-header__btn {
+  width: 191px;
+  margin-left: 15px;
+
+  @include tablet {
+    display: none;
+  }
+}

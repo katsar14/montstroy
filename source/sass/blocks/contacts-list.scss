@@ -1,0 +1,142 @@
+.contacts-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  color: $c-text-light;
+  background-color: $dark;
+
+  a {
+    color: $c-text-light;
+
+    @include hover;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.7;
+
+    @include tablet {
+      line-height: 2;
+    }
+  }
+
+  &--lh-small {
+    @include mobile {
+      address {
+        line-height: 1.4;
+      }
+    }
+  }
+
+  p {
+    margin: 4px 0;
+    color: rgba($c-text-light, 0.6);
+    font-size: 13px;
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}
+
+.contacts-list__item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--address::before {
+    width: 12px;
+    height: 15px;
+    background-image: url("../img/map-pin-icon.png");
+
+    @include retina {
+      background-image: url("../img/map-pin-icon@2x.png");
+    }
+  }
+
+  &--email::before {
+    width: 16px;
+    height: 11px;
+    background-image: url("../img/letter.png");
+
+    @include retina {
+      background-image: url("../img/letter@2x.png");
+    }
+  }
+
+  &--tel::before {
+    width: 14px;
+    height: 13px;
+    background-image: url("../img/phone-icon.png");
+
+    @include retina {
+      background-image: url("../img/phone-icon@2x.png");
+    }
+  }
+}
+
+.contacts-list--footer {
+  @include mobile {
+    color: rgba($c-text-light, 0.6);
+    background-color: #1a1a1a;
+  }
+
+  a {
+    @include mobile {
+      color: rgba($c-text-light, 0.6);
+    }
+  }
+
+  .contacts-list__item {
+    @include mobile {
+      margin-bottom: 23px;
+
+      &::before {
+        opacity: 0.6;
+      }
+
+      &--address::before {
+        background-image: url("../img/map-pin-icon-white.png");
+
+        @include retina {
+          background-image: url("../img/map-pin-icon-white@2x.png");
+        }
+      }
+
+      &--email::before {
+        background-image: url("../img/letter-white.png");
+
+        @include retina {
+          background-image: url("../img/letter-white@2x.png");
+        }
+      }
+
+      &--tel::before {
+        background-image: url("../img/phone-icon-white.png");
+
+        @include retina {
+          background-image: url("../img/phone-icon-white@2x.png");
+        }
+      }
+    }
+  }
+}

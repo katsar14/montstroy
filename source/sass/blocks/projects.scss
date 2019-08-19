@@ -1,0 +1,78 @@
+.projects {
+  margin-bottom: 110px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.projects__wrapper {
+  @include container;
+
+}
+
+.projects__title {
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 13px;
+  }
+
+  @include mobile{
+    margin-bottom: 2px;
+  }
+}
+
+.projects__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2px;
+  margin-right: -2px;
+
+  @include tablet {
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+
+  @include mobile {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.projects__item {
+  flex-shrink: 0;
+  padding: 2px;
+  display: flex;
+
+  @include tablet {
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+
+  @include tablet {
+    padding-bottom: 6px;
+  }
+
+  &--col-25 {
+    width: 25%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &--col-50 {
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+}

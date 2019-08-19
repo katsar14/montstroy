@@ -1,0 +1,136 @@
+.form__row {
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  .form__field {
+    flex: 0 0 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.form__field {
+  flex: 0 0 100%;
+  margin-bottom: 37px;
+
+  @include tablet {
+    margin-bottom: 27px;
+  }
+
+  @include mobile {
+    margin-bottom: 24px;
+  }
+
+  &--mt {
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    @include tablet {
+      margin-top: 27px;
+    }
+
+    @include mobile {
+      margin-top: 29px;
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 20px;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  textarea,
+  input {
+    @include field-reset;
+    display: block;
+    width: 100%;
+    padding: 2px 12px;
+    font: inherit;
+    line-height: 1.5;
+    border-bottom: 1px solid $c-border;
+    transition: opacity 0.2s, border-color 0.2s;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea:not(:focus):not(:disabled):hover,
+  input:not(:focus):not(:disabled):hover {
+    opacity: 0.65;
+  }
+
+  textarea:not(:disabled):focus,
+  input:not(:disabled):focus {
+    border-color: $dark;
+    outline: none;
+  }
+}
+
+.form__consent {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba($c-text, 0.5);
+  text-align: center;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  @include tablet {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 13px;
+    font-size: 10px;
+    line-height: 1.1;
+  }
+
+  @include mobile {
+    margin-top: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  a {
+    color: rgba($c-text, 0.5);
+    border-bottom: 1px dotted rgba($c-text, 0.5);
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba($c-text, 1);
+    }
+
+    &:active {
+      color: rgba($c-text, 0.4);
+    }
+  }
+}
+
+.form__submit {
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  @include tablet {
+    width: 163px;
+    margin-top: 31px;
+  }
+
+  @include mobile {
+    margin-top: 34px;
+  }
+}
