@@ -21,15 +21,28 @@
     }
 
     function openDropdown() {
-      togglers.forEach(function (item) {
-        if (item.classList.contains('active')) {
-          item.classList.remove('active');
-          item.nextElementSibling.style.maxHeight = target.scrollHeight + 'px';
-          setTimeout(function () {
-            item.nextElementSibling.style.maxHeight = 0;
-          }, 50);
+      togglers.forEach(function (item, index) {
+        if (window.matchMedia('(min-width: 768px').matches) {
+          if (index !== 0) {
+            if (item.classList.contains('active')) {
+              item.classList.remove('active');
+              item.nextElementSibling.style.maxHeight = target.scrollHeight + 'px';
+              setTimeout(function () {
+                item.nextElementSibling.style.maxHeight = 0;
+              }, 50);
+            }
+          }
+        } else {
+          if (item.classList.contains('active')) {
+            item.classList.remove('active');
+            item.nextElementSibling.style.maxHeight = target.scrollHeight + 'px';
+            setTimeout(function () {
+              item.nextElementSibling.style.maxHeight = 0;
+            }, 50);
+          }
         }
       });
+
       target.style.maxHeight = target.scrollHeight + 'px';
       setTimeout(function () {
         target.style.maxHeight = 'none';

@@ -17,12 +17,6 @@
   }
 }
 
-.features__wrapper {
-  @include mobile {
-    border: 1px solid $c-border;
-  }
-}
-
 .features__inner-wrapper {
   overflow: visible;
 
@@ -92,6 +86,7 @@
     box-sizing: border-box;
     font-size: 14px;
     padding: 120px 20px 33px;
+    border: 1px solid $c-border;
   }
 
   p {
@@ -219,7 +214,7 @@
 
       &.swiper-pagination-bullet-active {
         background-color: $primary;
-        transform: scale(1.2)
+        transform: scale(1.2);
       }
     }
   }
