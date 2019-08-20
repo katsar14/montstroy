@@ -25,6 +25,7 @@
 
   &::before {
     content: "";
+
     @include centerV;
     position: absolute;
     left: 15px;
@@ -35,6 +36,7 @@
 
   &::after {
     content: "";
+
     @include centerV;
     left: 27px;
     border: 4px solid currentColor;

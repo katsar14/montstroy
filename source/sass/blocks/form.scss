@@ -82,7 +82,7 @@
 .form__consent {
   font-size: 12px;
   line-height: 1.5;
-  color: rgba($c-text, 0.5);
+  color: rgba($c-text, 0.65);
   text-align: center;
   margin: 0;
   margin-top: 23px;
@@ -105,7 +105,7 @@
   }
 
   a {
-    color: rgba($c-text, 0.5);
+    color: rgba($c-text, 0.65);
     border-bottom: 1px dotted rgba($c-text, 0.5);
     transition: color 0.2s;
 

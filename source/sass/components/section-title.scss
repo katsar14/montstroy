@@ -12,7 +12,7 @@
   letter-spacing: 0.05em;
 
   &::after {
-    content: '';
+    content: "";
     height: 2px;
     flex: 1;
     margin-left: 15%;
@@ -30,5 +30,4 @@
   @include mobile {
     font-size: 20px;
   }
-
 }

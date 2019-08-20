@@ -14,7 +14,7 @@
       if (card === activeCard) {
         activeCard.classList.add('features__item--active');
         indicators.forEach(function (indicator) {
-          indicator.classList.remove('active')
+          indicator.classList.remove('active');
         });
         indicators[index].classList.add('active');
       } else {
@@ -24,8 +24,8 @@
   };
 
   featureCards.forEach(function (card) {
-    card.addEventListener('click', function () {
-      showActiveCard(this);
+    card.addEventListener('click', function (evt) {
+      showActiveCard(evt.currentTarget);
     });
   });
 
@@ -38,18 +38,22 @@
       el: '.features__indicators',
       type: 'bullets',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     initialSlide: 1
   };
 
   if (window.matchMedia('(max-width: 767px)').matches) {
-    var mySwiper = new Swiper('.features__inner-wrapper', featuresSliderSettings);
+    var mySwiper = new Swiper('.features__inner-wrapper', featuresSliderSettings); // eslint-disable-line no-undef
     mySwiper.init();
   }
 
   window.addEventListener('resize', function () {
     if (window.matchMedia('(max-width: 767px)').matches) {
       if (!mySwiper) {
-        mySwiper = new Swiper('.features__inner-wrapper', featuresSliderSettings);
+        mySwiper = new Swiper('.features__inner-wrapper', featuresSliderSettings); // eslint-disable-line no-undef
       }
       mySwiper.init();
     } else {

@@ -110,7 +110,6 @@
 }
 
 .page-footer__contacts-list {
-
   &--show-on-mobile {
     display: none;
 
@@ -186,10 +185,11 @@
   width: 100%;
   margin-top: 78px;
   order: 3;
+
   p {
     margin: 0;
     font-size: 10px;
-    color: rgba($c-text-light, 0.25);
+    color: rgba($c-text-light, 0.5);
     text-align: center;
     letter-spacing: 0.6px;
   }

@@ -33,7 +33,7 @@ gulp.task("copy", function () {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,webp,svg}")
   .pipe(imagemin([
-    imagemin.optipng({ optimizationLevel: 3 }),
+    imagemin.optipng({ optimizationLevel: 5 }),
     imagemin.jpegtran({ progressive: true }),
     imagemin.svgo()
   ]))
