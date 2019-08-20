@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer__bottom {
   padding-top: 56px;
   padding-bottom: 40px;
   background-color: $dark;
@@ -42,7 +42,7 @@
     width: 100%;
     margin-right: 0;
     margin-top: 42px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,10 +76,16 @@
 
   @include mobile {
     margin: 0;
-    padding-right: 40px;
-    padding-left: 20px;
     width: 100%;
-    order: 3;
+    order: -1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid $primary;
   }
 }
 
@@ -100,6 +106,18 @@
   @include mobile {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+.page-footer__contacts-list {
+
+  &--show-on-mobile {
+    display: none;
+
+    @include mobile {
+      display: block;
+      padding-top: 16px;
+    }
   }
 }
 
@@ -154,14 +172,13 @@
   @media (max-width: $large) {
     width: 13.8%;
     margin-top: 9px;
-    margin-left: 30px;
+    margin-left: 34px;
   }
 
   @include mobile {
     margin-left: 0;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 8px;
   }
 }
 
@@ -186,7 +203,7 @@
     padding-bottom: 15px;
     padding-right: 60px;
     padding-left: 60px;
-    margin-top: 35px;
+    margin-top: 37px;
     background-color: $dark;
   }
 }
