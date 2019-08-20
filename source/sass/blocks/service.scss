@@ -12,7 +12,7 @@
 
 .service__title {
   margin: 0;
-  padding: 29px 42px 15px;
+  padding: 33px 42px 15px;
   font-family: $font;
   font-weight: 800;
   font-size: 16px;
@@ -70,7 +70,7 @@
 }
 
 .service__item {
-  padding: 5px 32px 6px 42px;
+  padding: 5px 32px 7px 42px;
 
   @include tablet {
     padding: 0;

@@ -94,6 +94,12 @@
   }
 }
 
+.partners__item {
+  &.swiper-slide-active {
+    z-index: 1;
+  }
+}
+
 .partners__link {
   position: relative;
   display: block;

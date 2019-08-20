@@ -41,7 +41,7 @@
     order: 1;
     width: 100%;
     margin-right: 0;
-    margin-top: 40px;
+    margin-top: 42px;
     padding-bottom: 30px;
     display: flex;
     align-items: center;
@@ -109,12 +109,14 @@
   @media (max-width: $large) {
     display: block;
     margin-left: 20px;
+    margin-top: 2px;
   }
 
   @include mobile {
     width: calc(100% + 44px);
     margin-left: -20px;
     margin-right: -20px;
+    margin-top: 0;
   }
 }
 
@@ -134,9 +136,10 @@
 
 .page-footer__company-name {
   margin-bottom: 52px;
+  color: rgba($white, 0.7);
 
   @media (max-width: $large) {
-    display: block;
+    color: rgba($white, 0.5);
     width: 135px;
     margin: 0;
     font-size: 12px;
@@ -149,10 +152,13 @@
 
 .page-footer__socials {
   @media (max-width: $large) {
-    width: 14.5%;
+    width: 13.8%;
+    margin-top: 9px;
+    margin-left: 30px;
   }
 
   @include mobile {
+    margin-left: 0;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
