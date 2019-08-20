@@ -1,6 +1,8 @@
 .main-nav {
   &--header {
+    padding-bottom: 4px;
     @include tablet {
+      padding-bottom: 0;
       display: none;
       position: absolute;
       z-index: 10;
@@ -58,9 +60,17 @@
   }
 
   .main-nav--footer & {
-    margin-left: 20px;
+    margin-left: 18px;
     font-size: 12px;
     text-transform: none;
+
+    &[href]:hover {
+      color: $white;
+    }
+
+    &[href]:active {
+      color: $white;
+    }
   }
 
   @include mobile {

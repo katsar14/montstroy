@@ -465,126 +465,129 @@
 
 
     </section>
-
-    <section class="contacts">
-      <h2 class="section-title">Контакты</h2>
-      <div class="contacts__map" id="map"></div>
-      <div class="contacts__wrapper">
-        <ul class="contacts__contacts-list contacts-list contacts-list--lh-small">
-          <li class="contacts-list__item contacts-list__item--address">
-            <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</address>
-          </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--tel">
-            <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
-            <p>Ежедневно с 9:00 до 18:00</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__col-left">
-        <a class="page-footer__logo">
-          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой" width="141" height="60">
-        </a>
-        <p class="page-footer__company-name">ЗАО «НCП «МонтCтрой»</p>
-
-        <div class="page-footer__nav main-nav main-nav--footer">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Услуги</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Проекты</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Партнеры</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="page-footer__socials socials">
-          <ul class="socials__list">
-            <li>
-              <a class="socials__link socials__link--vk" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li>
-              <a class="socials__link socials__link--tw" href="#">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a class="socials__link socials__link--fb" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <section class="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts__map" id="map">
+        <span class="visually-hidden">Наш адрес: Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</span>
       </div>
-      <div class="page-footer__col-center">
-        <div class="feedback" id="feedback">
-          <h3>Свяжитесь с нами</h3>
-          <div class="feedback_form form">
-            <form action="#" method="post">
-              <div class="form__row">
-                <div class="form__field">
-                  <label for="name-field">Имя</label>
-                  <input name="name" type="text" id="name-field" required>
-                </div>
-                <div class="form__field">
-                  <label for="phone-field">Телефон</label>
-                  <input name="tel" type="tel" id="phone-field" required>
-                </div>
-              </div>
-              <div class="form__field">
-                <label for="email-field">E-mail</label>
-                <input name="email" type="email" id="email-field" required>
-              </div>
-              <div class="form__field form__field--mt">
-                <label for="comment-field">Сообщение</label>
-                <textarea name="comment" id="comment-field" rows="1" required></textarea>
-              </div>
-              <p class="form__consent">
-                Заполняя форму на сайте, вы соглашаетесь с нашей
-                <a href="#" target="_blank">Политикой конфиденциальности</a>
-              </p>
-              <button class="form__submit btn btn--dark" type="submit">Отправить</button>
-            </form>
+    </section>
+    <div class="page-footer__bottom">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__col-left">
+          <a class="page-footer__logo">
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой" width="141" height="60">
+          </a>
+          <p class="page-footer__company-name">ЗАО «НCП «МонтCтрой»</p>
+
+          <div class="page-footer__nav main-nav main-nav--footer">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Услуги</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Проекты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Партнеры</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="page-footer__contacts-list page-footer__contacts-list--show-on-mobile">
+            <ul class="contacts-list contacts-list--footer">
+              <li class="contacts-list__item contacts-list__item--address">
+                <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр<br> «ВАРШАВКА Sky»</address>
+              </li>
+              <li class="contacts-list__item contacts-list__item--email">
+                <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+              </li>
+              <li class="contacts-list__item contacts-list__item--tel">
+                <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
+                <p>Ежедневно с 9:00 до 18:00</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="page-footer__socials socials">
+            <ul class="socials__list">
+              <li>
+                <a class="socials__link socials__link--vk" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link socials__link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link socials__link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+        <div class="page-footer__col-center">
+          <div class="feedback" id="feedback">
+            <h3>Свяжитесь с нами</h3>
+            <div class="feedback_form form">
+              <form action="#" method="post">
+                <div class="form__row">
+                  <div class="form__field">
+                    <label for="name-field">Имя</label>
+                    <input name="name" type="text" id="name-field" required>
+                  </div>
+                  <div class="form__field">
+                    <label for="phone-field">Телефон</label>
+                    <input name="tel" type="tel" id="phone-field" required>
+                  </div>
+                </div>
+                <div class="form__field">
+                  <label for="email-field">E-mail</label>
+                  <input name="email" type="email" id="email-field" required>
+                </div>
+                <div class="form__field form__field--mt">
+                  <label for="comment-field">Сообщение</label>
+                  <input name="comment" type="text" required>
+                </div>
+                <p class="form__consent">
+                  Заполняя форму на сайте, вы соглашаетесь с нашей
+                  <a href="#" target="_blank">Политикой&nbsp;конфиденциальности</a>
+                </p>
+                <button class="form__submit btn btn--dark" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
 
-      <div class="page-footer__col-right">
-        <ul class="page-footer__contacts-list contacts-list contacts-list--footer">
-          <li class="contacts-list__item contacts-list__item--address">
-            <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</address>
-          </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--tel">
-            <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
-            <p>Ежедневно с 9:00 до 18:00</p>
-          </li>
-        </ul>
-      </div>
+        <div class="page-footer__col-right">
+          <ul class="page-footer__contacts-list contacts-list contacts-list--lh-small">
+            <li class="contacts-list__item contacts-list__item--address">
+              <address>Варшавское шоссе,<br> д, 118, к.1 Бизнес-центр <br> «ВАРШАВКА Sky»</address>
+            </li>
+            <li class="contacts-list__item contacts-list__item--email">
+              <a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--tel">
+              <a href="tel:+7495452-67-23">+7 (495) 452-67-23</a>
+              <p>Ежедневно с 9:00 до 18:00</p>
+            </li>
+          </ul>
+        </div>
 
 
 
-      <div class="page-footer__copyright">
-        <p>1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+        <div class="page-footer__copyright">
+          <p>1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+        </div>
       </div>
     </div>
   </footer>

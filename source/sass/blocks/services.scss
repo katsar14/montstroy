@@ -2,7 +2,7 @@
   margin-bottom: 80px;
 
   @include tablet {
-    margin-bottom: 115px;
+    margin-bottom: 105px;
   }
 
   @include mobile {
@@ -16,8 +16,9 @@
 }
 
 .services__title {
+  padding-bottom: 4px;
   @include tablet {
-    margin-bottom: 11px;
+    margin-bottom: 15px;
   }
 }
 
