@@ -39,7 +39,7 @@
           </li>
         </ul>
       </nav>
-      <button class="page-header__nav-toggler js-nav-toggler" type="button" data-label="Управление меню"></button>
+      <button class="page-header__nav-toggler js-nav-toggler" type="button" aria-label="Управление меню"></button>
       <a class="page-header__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
       <a href="#feedback" class="page-header__btn btn js-smooth-scroll">Обратная связь</a>
     </div>
@@ -71,20 +71,35 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="features__inner-wrapper swiper-container">
             <ul class="features__list swiper-wrapper">
-              <li class="features__item features__item--1 swiper-slide">
+              <li class="features__item swiper-slide">
+                <span class="features__icon">
+                  <svg width="62" height="64" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </span>
                 <p>Гарантированное высокое качество продукции</p>
               </li>
-              <li class="features__item features__item--2 features__item--active swiper-slide">
+              <li class="features__item features__item--active swiper-slide">
+                <span class="features__icon">
+                  <svg width="74" height="49" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-handshake"></use>
+                  </svg>
+                </span>
                 <p>Исполнение всех сроков&nbsp;и&nbsp;обязательств</p>
               </li>
-              <li class="features__item features__item--3 swiper-slide">
+              <li class="features__item swiper-slide">
+                <span class="features__icon">
+                  <svg width="70" height="69" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-settings"></use>
+                  </svg>
+                </span>
                 <p>Собственная производственная база</p>
               </li>
             </ul>
           </div>
           <div class="swiper-pagination features__indicators">
             <span class="features__indicator"></span>
-            <span class="features__indicator features__indicator--active"></span>
+            <span class="features__indicator active"></span>
             <span class="features__indicator"></span>
           </div>
         </div>
@@ -319,77 +334,77 @@
         <h2 class="projects__title section-title">Проекты</h2>
         <ul class="projects__list">
           <li class="projects__item projects__item--col-25">
-            <div class="project project--1">
+            <a href="#" class="project" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="290" height="290" src="../img/projects-1.jpg"
+                srcset="../img/projects-1@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title">Стадион «Футур»</h3>
               <div class="project__description">
                 <p>В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство
                   распределительной сети мощностью 20кВ</p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
           <li class="projects__item projects__item--col-25">
-            <div class="project project--2">
+            <a href="#" class="project" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="290" height="290" src="../img/projects-2.jpg"
+                srcset="../img/projects-2@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title">Бизнес-центр «Ореол»</h3>
               <div class="project__description">
                 <p>Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с
                   апартаментами
                 </p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
           <li class="projects__item projects__item--col-25">
-            <div class="project project--3">
+            <a href="#" class="project" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="290" height="290" src="../img/projects-3.jpg"
+                srcset="../img/projects-3@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title">Кинотеатр «Семейный»</h3>
               <div class="project__description">
                 <p>Специалисты выполнили комплекс работ по системам учета электроэнергии</p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
           <li class="projects__item projects__item--col-25">
-            <div class="project project--4">
+            <a href="#" class="project" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="290" height="290" src="../img/projects-4.jpg"
+                srcset="../img/projects-4@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title">ТК «Medial»</h3>
               <div class="project__description">
                 <p>В целях обеспечения электроэнергией телевизионного комплекса было осуществлено строительство
                   распределительной сети мощностью 20кВ</p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
           <li class="projects__item projects__item--col-50">
-            <div class="project project--5 project--large">
+            <a href="#" class="project project--large" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="583" height="290" src="../img/projects-5.jpg"
+                srcset="../img/projects-5@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title project__title">ОАО «ЭнергоНацКомпани»</h3>
               <div class="project__description">
                 <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы
                   и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО
                   «ЭнергоНацКомпани»</p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
           <li class="projects__item projects__item--col-50">
-            <div class="project project--6 project--large">
+            <a href="#" class="project project--large" aria-label="Перейти на страницу проекта">
+              <img class="project__bg-img" width="583" height="290" src="../img/projects-6.jpg"
+                srcset="../img/projects-6@2x.jpg 2x" alt="" aria-hidden="true">
               <h3 class="project__title">Театр «Буратино»</h3>
               <div class="project__description">
                 <p>Специалистами были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации
                   сценических подъемников в здании театра</p>
               </div>
-              <a href="#" class="arrow-btn project__more-btn">
-                <span class="visually-hidden">Перейти на страницу проекта</span>
-              </a>
-            </div>
+              <span class="arrow-btn project__more-btn"></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -462,8 +477,6 @@
         </ul>
         <div class="swiper-pagination partners__pagination"></div>
       </div>
-
-
     </section>
   </main>
 
@@ -555,7 +568,7 @@
                 </div>
                 <div class="form__field form__field--mt">
                   <label for="comment-field">Сообщение</label>
-                  <input name="comment" type="text" required>
+                  <input name="comment" id="comment-field" type="text" required>
                 </div>
                 <p class="form__consent">
                   Заполняя форму на сайте, вы соглашаетесь с нашей
@@ -594,7 +607,7 @@
 
 
 
-  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

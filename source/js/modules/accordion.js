@@ -12,7 +12,7 @@
     var target = el.nextElementSibling;
     if (!target || !target.classList.contains('service__list')) {
       return;
-    };
+    }
 
     function documentKeypressHandler(evt) {
       if (evt.keyCode === 27) {
@@ -46,7 +46,7 @@
       target.style.maxHeight = target.scrollHeight + 'px';
       setTimeout(function () {
         target.style.maxHeight = 'none';
-      }, 300)
+      }, 300);
       el.classList.add('active');
       document.addEventListener('keydown', documentKeypressHandler);
     }
@@ -73,9 +73,9 @@
   toggleDropdown(togglers[0]);
 
   togglers.forEach(function (toggler) {
-    toggler.addEventListener('click', function () {
-      toggleDropdown(this);
-    })
+    toggler.addEventListener('click', function (evt) {
+      toggleDropdown(evt.currentTarget);
+    });
   });
 
 })();

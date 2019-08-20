@@ -33,8 +33,7 @@
     }
   };
 
-    var mySwiper = new Swiper('.partners__wrapper', settings);
-    mySwiper.init();
-
+  var mySwiper = new Swiper('.partners__wrapper', settings); // eslint-disable-line no-undef
+  mySwiper.init();
 
 })();

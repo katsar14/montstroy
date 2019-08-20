@@ -42,6 +42,7 @@
   color: #222222;
   font-size: 18px;
   font-weight: 700;
+
   @include hover;
 
   @include tablet {
@@ -54,6 +55,7 @@
   }
 }
 
+/* stylelint-disable*/
 .page-header__nav-toggler {
   @include btn-reset;
   display: none;
@@ -90,24 +92,25 @@
     width: 23px;
     height: 23px;
     margin-left: auto;
-
     background-image: linear-gradient(
-    to bottom,
-    $transparent 3px,
-    #afafaf 3px,
-    #afafaf 5px,
-    $transparent 5px,
-    $transparent 9px,
-    #afafaf 9px,
-    #afafaf 11px,
-    $transparent 11px,
-    $transparent 16px,
-    #afafaf 16px,
-    #afafaf 18px,
-    $transparent 18px
-  );
+      to bottom,
+      $transparent 3px,
+      #afafaf 3px,
+      #afafaf 5px,
+      $transparent 5px,
+      $transparent 9px,
+      #afafaf 9px,
+      #afafaf 11px,
+      $transparent 11px,
+      $transparent 16px,
+      #afafaf 16px,
+      #afafaf 18px,
+      $transparent 18px
+    );
   }
 }
+/* stylelint-enable*/
+
 
 .page-header__btn {
   width: 191px;

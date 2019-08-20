@@ -17,24 +17,27 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "eslint": "5.12.1",
+    "eslint-config-htmlacademy": "0.5.2",
+    "stylelint": "9.10.1",
+    "stylelint-config-htmlacademy": "0.1.1"
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "eslint": "eslint source/js/**/*.js",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint"
   },
+  "editorconfig-cli": [
+    "source/*.html"
+  ],
   "browserslist": [
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.12"
