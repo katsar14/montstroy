@@ -1,22 +1,22 @@
 .main-screen-container {
   position: relative;
   margin-bottom: 100px;
-  background: linear-gradient(90deg, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 100%),
+  background: linear-gradient(to top, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 50%),
     url("../img/banner.jpg") no-repeat;
   background-size: cover;
-  background-position: center -10px, center -100px;
+  background-position: center 110px, center -80px;
   background-repeat: no-repeat;
   color: $c-text-light;
 
   @include retina {
-    background: linear-gradient(90deg, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 100%),
+    background: linear-gradient(to top, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 50%),
       url("../img/banner@2x.jpg") no-repeat;
     background-size: cover;
-    background-position: center -10px, center -100px;
+    background-position: center 110px, center -80px;
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 1910px) {
+  @media (max-width: 1919px) {
     background-position: center center, center center;
   }
 

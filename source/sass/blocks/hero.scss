@@ -5,14 +5,14 @@
   @include tablet {
     padding-top: 125px;
     padding-bottom: 130px;
-    background: linear-gradient(90deg, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 100%),
+    background: linear-gradient(to top, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 50%),
       url("../img/banner.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     color: $c-text-light;
 
     @include retina {
-      background: linear-gradient(90deg, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 100%),
+      background: linear-gradient(to top, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 50%),
         url("../img/banner@2x.jpg") no-repeat;
       background-size: cover;
       background-position: center;

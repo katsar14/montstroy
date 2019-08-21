@@ -55,6 +55,7 @@
   &:focus {
     border-color: $transparent;
     color: $dark;
+    background-color: $primary;
   }
 
   width: 56px;
@@ -107,23 +108,25 @@
   width: 100%;
   height: 135px;
   overflow: hidden;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, border-color 0.3s;
   border: 1px solid #ededed;
   background-color: $white;
   box-sizing: border-box;
 
   &:hover,
   &:focus {
-    opacity: 1;
     outline: none;
+    border-color: darken($color: #ededed, $amount: 15);
 
-    @include tablet {
+    img {
       opacity: 1;
     }
   }
 
   &:active {
-    opacity: 0.5;
+    img {
+      opacity: 0.5;
+    }
   }
 
   img {
@@ -131,6 +134,8 @@
     display: block;
     max-height: 100%;
     width: auto;
+    opacity: 0.45;
+    transition: opacity 0.3s;
   }
 
   @media (max-width: 1023px) and (min-width: 768px) {

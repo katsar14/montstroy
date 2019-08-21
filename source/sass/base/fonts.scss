@@ -2,52 +2,46 @@
   font-weight: 500;
   font-family: "Roboto";
   font-style: normal;
-  src:
-    url("../fonts/roboto-medium.woff2") format("woff2"),
-    url("../fonts/roboto-medium.woff") format("woff");
+  src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Roboto";
   font-style: normal;
-  src:
-    url("../fonts/roboto-regular.woff2") format("woff2"),
-    url("../fonts/roboto-regular.woff") format("woff");
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Roboto";
   font-style: normal;
-  src:
-    url("../fonts/roboto-bold.woff2") format("woff2"),
-    url("../fonts/roboto-bold.woff") format("woff");
+  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Roboto";
   font-style: normal;
-  src:
-    url("../fonts/roboto-black.woff2") format("woff2"),
-    url("../fonts/roboto-black.woff") format("woff");
+  src: url("../fonts/roboto-black.woff2") format("woff2"), url("../fonts/roboto-black.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Raleway";
   font-style: normal;
-  src:
-    url("../fonts/Raleway-Black.woff2") format("woff2"),
-    url("../fonts/Raleway-Black.woff") format("woff");
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Raleway";
   font-style: normal;
-  src:
-    url("../fonts/Raleway-Bold.woff2") format("woff2"),
-    url("../fonts/Raleway-Bold.woff") format("woff");
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-display: swap;
 }

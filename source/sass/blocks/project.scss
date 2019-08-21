@@ -108,7 +108,8 @@
   margin-top: auto;
   align-self: flex-end;
 
-  .project:hover & {
+  .project:hover,
+  .project:focus & {
     background-color: $primary;
     border-color: $primary;
     color: #575757;
