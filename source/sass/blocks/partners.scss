@@ -123,6 +123,10 @@
     }
   }
 
+  &:active {
+    opacity: 0.5;
+  }
+
   img {
     @include center;
     display: block;
