@@ -1,3 +1,20 @@
+.form {
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 45px;
+
+    @include tablet {
+      margin-bottom: 27;
+    }
+
+    @include mobile {
+      margin-bottom: 29px;
+    }
+  }
+}
+
 .form__row {
   display: flex;
   margin-left: -20px;
@@ -22,17 +39,8 @@
     margin-bottom: 24px;
   }
 
-  &--margin-top {
-    margin-top: 45px;
+  &:last-of-type {
     margin-bottom: 0;
-
-    @include tablet {
-      margin-top: 27px;
-    }
-
-    @include mobile {
-      margin-top: 29px;
-    }
   }
 
   label {

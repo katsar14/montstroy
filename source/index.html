@@ -430,7 +430,8 @@
         <ul class="partners__list swiper-wrapper">
           <li class="partners__item swiper-slide">
             <a href="#" class="partners__link">
-              <img src="img/partners-1.png" width="167" height="138" srcset="img/partners-1@2x.png 2x" alt="Ava Company">
+              <img src="img/partners-1.png" width="167" height="138" srcset="img/partners-1@2x.png 2x"
+                alt="Ava Company">
             </a>
           </li>
           <li class="partners__item swiper-slide">
@@ -530,21 +531,25 @@
             <h3>Свяжитесь с нами</h3>
             <div class="feedback_form form">
               <form action="#" method="post">
-                <div class="form__row">
-                  <div class="form__field">
-                    <label for="name-field">Имя</label>
-                    <input name="name" type="text" id="name-field" required>
+                <fieldset>
+                  <legend class="visually-hidden">Контактная информация</legend>
+                  <div class="form__row">
+                    <div class="form__field">
+                      <label for="name-field">Имя</label>
+                      <input name="name" type="text" id="name-field" required>
+                    </div>
+                    <div class="form__field">
+                      <label for="phone-field">Телефон</label>
+                      <input name="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,14}(\s*)?" type="tel"
+                        title="8(999)999-99-99" id="phone-field" required>
+                    </div>
                   </div>
                   <div class="form__field">
-                    <label for="phone-field">Телефон</label>
-                    <input name="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,14}(\s*)?" type="tel" title="8(999)999-99-99" id="phone-field" required>
+                    <label for="email-field">E-mail</label>
+                    <input name="email" type="email" id="email-field" required>
                   </div>
-                </div>
+                </fieldset>
                 <div class="form__field">
-                  <label for="email-field">E-mail</label>
-                  <input name="email" type="email" id="email-field" required>
-                </div>
-                <div class="form__field form__field--margin-top">
                   <label for="comment-field">Сообщение</label>
                   <input name="comment" id="comment-field" type="text" required>
                 </div>
