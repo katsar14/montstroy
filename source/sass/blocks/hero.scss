@@ -5,44 +5,32 @@
   @include tablet {
     padding-top: 125px;
     padding-bottom: 130px;
+    padding-left: 83px;
+    padding-right: 65px;
     background: linear-gradient(to top, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 50%),
-      url("../img/banner.jpg") no-repeat;
+      $dark url("../img/banner.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     color: $c-text-light;
 
     @include retina {
       background: linear-gradient(to top, rgba(13, 13, 13, 0.5) 0%, rgba(13, 13, 13, 0) 50%),
-        url("../img/banner@2x.jpg") no-repeat;
+        $dark url("../img/banner@2x.jpg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
 
   @include mobile {
+    display: flex;
+    flex-direction: column;
     padding-top: 128px;
     padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     background-size: 848px 477px;
     background-position: 60% top;
     background-repeat: no-repeat;
-  }
-}
-
-.hero__wrapper {
-  @include container;
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
-    padding-left: 83px;
-    padding-right: 65px;
-  }
-
-  @include mobile {
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -66,6 +54,9 @@
 }
 
 .hero__text {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-right: 13%;
   font-weight: 500;
   font-size: 24px;
@@ -77,8 +68,7 @@
     padding-right: 25px;
   }
 
-  b {
-    font-weight: 400;
+  span {
     color: $primary;
   }
 
@@ -90,6 +80,7 @@
       text-align: center;
       padding-right: 15px;
       padding-left: 15px;
+      font-weight: 400;
     }
   }
 
@@ -99,7 +90,7 @@
       color: $c-text;
       font-size: 12px;
       line-height: 19px;
-      padding-top: 22px;
+      padding-top: 32px;
       padding-right: 20px;
       padding-left: 22px;
       margin-left: -20px;
@@ -107,7 +98,7 @@
       width: calc(100% + 40px);
       background-color: $white;
 
-      b {
+      span {
         color: $c-text;
       }
     }
