@@ -10,10 +10,10 @@
   <meta name="keywords" content="">
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="no-js">
 
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -463,6 +463,11 @@
       <h2 class="section-title">Контакты</h2>
       <div class="contacts__map" id="map">
         <span class="visually-hidden">Наш адрес: Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</span>
+        <picture>
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+          <img width="1920" height="625" src="img/map.jpg"
+            srcset="img/map@2x.jpg 2x" alt="Наш адрес: Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»" aria-hidden="true">
+        </picture>
       </div>
     </section>
     <div class="page-footer__bottom">
@@ -589,7 +594,7 @@
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

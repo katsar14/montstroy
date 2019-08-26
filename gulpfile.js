@@ -70,7 +70,9 @@ gulp.task("js", function() {
     "source/js/modules/*.js"
   ])
     .pipe(concat('main.js'))
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
+    .pipe(rename("main.min.js"))
     .pipe(gulp.dest("build/js"))
 });
 
@@ -81,7 +83,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });

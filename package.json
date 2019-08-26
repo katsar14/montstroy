@@ -32,7 +32,11 @@
     "test": "npm run editorconfig && npm run stylelint && npm run eslint"
   },
   "editorconfig-cli": [
-    "source/*.html"
+    "/*.json",
+    "/*.js",
+    "source/*.html",
+    "source/js/modules/*.js",
+    "source/sass/**/*.scss"
   ],
   "browserslist": [
     "last 2 versions",
