@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 100px;
   background: linear-gradient(to top, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 50%),
-    url("../img/banner.jpg") no-repeat;
+    $dark url("../img/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center, center bottom;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
   @include retina {
     background: linear-gradient(to top, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 50%),
-      url("../img/banner@2x.jpg") no-repeat;
+      $dark url("../img/banner@2x.jpg") no-repeat;
     background-size: cover;
     background-position: center, center bottom;
     background-repeat: no-repeat;

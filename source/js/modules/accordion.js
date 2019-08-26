@@ -22,7 +22,7 @@
 
     function openDropdown() {
       togglers.forEach(function (item, index) {
-        if (window.matchMedia('(min-width: 768px').matches) {
+        if (window.matchMedia('(min-width: 768px)').matches) {
           if (index !== 0) {
             if (item.classList.contains('active')) {
               item.classList.remove('active');
@@ -70,7 +70,9 @@
     }
   }
 
-  toggleDropdown(togglers[0]);
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    toggleDropdown(togglers[0]);
+  }
 
   togglers.forEach(function (toggler) {
     toggler.addEventListener('click', function (evt) {

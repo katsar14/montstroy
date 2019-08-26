@@ -139,11 +139,12 @@
   justify-content: center;
 
   @include tablet {
-    display: flex;
+    // display: flex;
   }
 
   @include mobile {
     margin-top: 10px;
+    display: flex;
   }
 
   span {

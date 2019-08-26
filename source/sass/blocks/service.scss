@@ -1,6 +1,5 @@
 .service {
   min-height: 500px;
-  width: 100%;
   background-color: $white;
   box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
 
@@ -26,6 +25,12 @@
     font-size: 14px;
     font-weight: 400;
     background-color: $c-bg-lighter;
+    cursor: pointer;
+    transition: 0.2s background-color;
+
+    &:not(.active):hover {
+      background-color: darken($color: $c-bg-lighter, $amount: 4);
+    }
 
     &.active {
       background-color: $c-bg-darker;
