@@ -11,6 +11,7 @@
     padding-bottom: 8px;
     padding-left: 65px;
     padding-right: 58px;
+    flex-wrap: wrap;
   }
 
   @include mobile {
@@ -74,6 +75,10 @@
 
   @include tablet {
     display: block;
+
+    .no-js & {
+      display: none;
+    }
   }
 
   @include mobile {

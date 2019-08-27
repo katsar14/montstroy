@@ -1057,6 +1057,8 @@ img {
     padding-bottom: 8px;
     padding-left: 65px;
     padding-right: 58px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1143,6 +1145,9 @@ img {
   .page-header__nav-toggler {
     display: block;
   }
+  .no-js .page-header__nav-toggler {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1186,6 +1191,11 @@ img {
   }
   .no-js .main-nav--header {
     display: block;
+    position: static;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
   }
 }
 
@@ -1804,9 +1814,6 @@ img {
 }
 
 .services__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

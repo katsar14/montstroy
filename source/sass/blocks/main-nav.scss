@@ -17,6 +17,9 @@
 
       .no-js & {
         display: block;
+        position: static;
+        order: 1;
+        width: 100%;
       }
     }
   }
